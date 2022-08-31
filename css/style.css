@@ -16,7 +16,7 @@
 #body-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 250px auto 100px;
+    grid-template-rows: auto auto 100px;
     min-width: 320px;
 }
 
@@ -31,9 +31,9 @@ body p {
 }
 
 #header {
-    background: rgb(52, 52, 52);
-    background: linear-gradient(90deg, rgba(52, 52, 52, 1) 7%, rgba(77, 77, 77, 1) 43%, rgba(210, 168, 9, 1) 100%);
-    /* background-color: gray; */
+    background-color: gray;
+    /* background: rgb(52, 52, 52);
+    background: linear-gradient(90deg, rgba(52, 52, 52, 1) 7%, rgba(77, 77, 77, 1) 43%, rgba(210, 168, 9, 1) 100%); */
     height: auto;
 }
 
@@ -76,25 +76,25 @@ body p {
     justify-content: space-around;
 }
 
-#header .navigation-bar .botones .boton-menu {
-    background-color: rgb(165, 165, 165);
+#header .navbar .container-fluid #navbarNav ul li {
+    /* background-color: rgb(165, 165, 165); */
     height: auto;
     padding: 10px;
     margin: 6px;
     border-radius: 5px;
 }
 
-#header .navigation-bar .botones .boton-menu:hover {
+#header .navbar .container-fluid #navbarNav ul li:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-#header .navigation-bar .botones .boton-menu a {
-    color: black;
-    font-size: 18px;
+#header .navbar .container-fluid #navbarNav ul li a {
+    color: white;
+    font-size: 22px;
 }
 
-#header .navigation-bar .botones .boton-menu a:hover {
+#header .navbar .container-fluid #navbarNav ul li a:hover {
     color: wheat;
 }
 
@@ -471,7 +471,7 @@ section.galeria-container .item-gallery img {
 
 
 @media (max-width:767px) {
-    #header {
+    /*     #header {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 300px;
@@ -491,11 +491,11 @@ section.galeria-container .item-gallery img {
         flex-direction: column;
         justify-content: flex-end;
         height: auto;
-    }
+    } */
 
-    #intro {
+    /* #intro {
         margin: 50px 0;
-    }
+    } */
 
     #intro .presentacion {
         overflow: scroll;
