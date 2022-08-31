@@ -279,7 +279,7 @@ div.galeria-texto {
 }
 
 
-section.galeria-container {
+.galeria-container.grid-gallery.habitaciones {
     background-color: bisque;
     width: 100%;
     padding: 25px;
@@ -292,17 +292,20 @@ section.galeria-container {
 section.galeria-container .item-gallery {
     width: 600px;
     height: auto;
-
 }
-
 
 
 section.galeria-container .item-gallery img {
     width: 100%;
     height: 100%;
-
 }
 
+
+.carousel-inner {
+    background-color: bisque;
+    width: 100%;
+    padding: 25px;
+}
 
 
 /* PAGINA UBICACION */
