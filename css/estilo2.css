@@ -11,12 +11,12 @@
 }
 
 /* Grid */
-#body-container {
+/* #body-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px auto 100px;
     min-width: 320px;
-}
+} */
 
 
 body {
@@ -35,7 +35,6 @@ body p {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
     z-index: 999;
     background: transparent;
@@ -107,7 +106,7 @@ body p {
 
 header .navigation-bar .botones .boton-menu a {
     color: black;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .navigation-bar .botones .boton-menu a:hover {
@@ -160,20 +159,15 @@ header .navigation-bar .botones .boton-menu a {
     padding-top: 0px;
     color: wheat;
     font-style: italic;
-    font-size: 26px;
+    font-size: 23px;
     letter-spacing: 2px;
     text-align: center;
-
 }
-
-
-
-
-
 
 /* CONTENIDO INDEX */
 
 #sitio {
+    position: inherit;
     margin-top: 600px;
     font-weight: 500;
     font-size: 25px;
@@ -260,12 +254,13 @@ header .navigation-bar .botones .boton-menu a {
 
 
 
+
 /* PAGINAS */
 
 /* introduccion */
 
 .introduccion .presentacion {
-
+    margin-top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -484,7 +479,7 @@ section.galeria-container .item-gallery img {
 
 
 
-
+/* MEDIA QUERIS */
 @media (min-width:768px) {
 
     /* animacion galeria */
@@ -542,7 +537,6 @@ section.galeria-container .item-gallery img {
         text-align: initial;
         border-bottom: none;
         padding: 0;
-
     }
 
     .navigation-bar .botones .boton-menu {
@@ -577,8 +571,6 @@ section.galeria-container .item-gallery img {
         margin-top: 200px;
     }
 
-
-
     #sitio .presentacion-habitacion .img-room-home {
         order: 1;
     }
@@ -592,7 +584,6 @@ section.galeria-container .item-gallery img {
         width: 70%;
         height: auto;
     }
-
 
     /* paginas habitaciones & restaurant */
     .introduccion {
