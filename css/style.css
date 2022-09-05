@@ -16,8 +16,8 @@
 #body-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 250px auto 100px;
-    min-width: 320px;
+    grid-template-rows: 200px auto 100px;
+    /* min-width: 320px; */
 }
 
 
