@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px auto 100px;
-    /* min-width: 320px; */
+    min-width: 320px;
 }
 
 
@@ -471,7 +471,7 @@ section.galeria-container .item-gallery img {
 
 
 @media (max-width:767px) {
-    #header {
+    /* #header {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 300px;
@@ -491,7 +491,7 @@ section.galeria-container .item-gallery img {
         flex-direction: column;
         justify-content: flex-end;
         height: auto;
-    }
+    } */
 
     #intro {
         margin: 50px 0;
