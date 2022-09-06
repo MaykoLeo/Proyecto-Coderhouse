@@ -110,7 +110,7 @@ header .navigation-bar .botones .boton-menu a {
 }
 
 .navigation-bar .botones .boton-menu a:hover {
-    color: wheat;
+    color: rgb(155, 140, 113);
 }
 
 #header .navigation-bar .botones .boton-menu:hover {
@@ -155,7 +155,7 @@ header .navigation-bar .botones .boton-menu a {
     z-index: 2;
 }
 
-#intro .presentacion h2 {
+#intro .presentacion h1 {
     padding-top: 0px;
     color: wheat;
     font-style: italic;
