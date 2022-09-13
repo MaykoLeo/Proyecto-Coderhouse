@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* HEADER */
+#header {
+  width: auto;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background: transparent;
+  transition: 0.25s ease-in;
+}
+#header .logo-nombre {
+  text-align: center;
+  padding: 0 70px;
+}
+#header .logo-nombre img {
+  width: 450px;
+  height: auto;
+}
+#header:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.25s ease-in;
+}
+
+/* ICONO MENU HAMBURGUESA */
+#check-menu {
+  display: none;
+}
+
+.img-menu-hamb {
+  display: none;
+  padding: 0 5px;
+}
+.img-menu-hamb:hover {
+  cursor: pointer;
+}
+.img-menu-hamb img {
+  width: 40px;
+  height: auto;
+}
+
+/* BARRA NAVEGACION */
+.navigation-bar {
+  padding: 0 2rem;
+  width: 100%;
+  text-align: center;
+}
+.navigation-bar .botones {
+  border-bottom: solid 1px wheat;
+  padding: 30px;
+  height: 2rem;
+  width: auto;
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navigation-bar .botones .boton-menu {
+  display: block;
+  padding: 2px;
+}
+.navigation-bar .botones .boton-menu a {
+  color: black;
+  font-size: 20px;
+}
+.navigation-bar .botones .boton-menu a:hover {
+  color: rgb(155, 140, 113);
+}
+.navigation-bar .botones .boton-menu:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* PRESENTACION INDEX */
+#intro {
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(0deg, rgba(61, 61, 61, 0) 60%, rgba(77, 77, 77, 0.6138830532) 100%), url("../assets/img/hall-hotel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#intro .presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  width: 80%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.419);
+  padding: 5px 15px;
+  height: 200px;
+  z-index: 2;
+}
+#intro .presentacion h1 {
+  padding-top: 0px;
+  color: wheat;
+  font-style: italic;
+  font-size: 23px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* CONTENIDO INDEX */
+#sitio {
+  position: inherit;
+  margin-top: 600px;
+  font-weight: 500;
+  font-size: 25px;
+}
+#sitio p {
+  padding: 5%;
+  font-size: 20px;
+}
+#sitio div {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+}
+#sitio div img {
+  border-radius: 10px;
+}
+#sitio div .texto-presentacion {
+  flex-direction: column;
+}
+#sitio h4 {
+  color: black;
+  border-bottom: solid 2px rgb(196, 142, 41);
+  padding-bottom: 5px;
+}
+#sitio a {
+  background-color: black;
+  color: wheat;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+#sitio .presentacion-habitacion .img-room-home {
+  /* home presentacion habitación */
+  width: 40%;
+  height: auto;
+}
+#sitio .presentacion-bar .img-bar-home {
+  /* home presentacion bar restaurant */
+  width: 50%;
+  height: auto;
+  order: 1;
+}
+
+/* FOOTER */
+#footer {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#footer div {
+  padding: 10px 15px;
+}
+
+@media (max-width: 767px) {
+  /* BARRA NAVEGACION HAMBURG */
+  .img-menu-hamb {
+    display: block;
+  }
+  .img-menu-hamb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+  }
+  .navigation-bar {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.901);
+    width: auto;
+    height: 265px;
+    padding: 0;
+    margin-left: -80%;
+    transition: all 0.3s;
+  }
+  .navigation-bar .botones {
+    display: block;
+    width: auto;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: initial;
+    border-bottom: none;
+    padding: 0;
+  }
+  .navigation-bar .botones .boton-menu {
+    margin: 0%;
+    padding: 12px 5px;
+  }
+  .navigation-bar .botones .boton-menu a {
+    color: wheat;
+    font-size: 1.4rem;
+  }
+  #check-menu:checked ~ .navigation-bar {
+    margin: 0;
+  }
+  /* PRESENTACION INDEX */
+  #intro {
+    margin: 0;
+  }
+  #intro .presentacion {
+    overflow: auto;
+    padding: 0 0;
+    margin: 0;
+  }
+  #intro .presentacion h2 {
+    width: 350px;
+    margin-top: 200px;
+  }
+  #sitio .presentacion-habitacion .img-room-home {
+    order: 1;
+  }
+  #sitio div {
+    display: flex;
+    flex-direction: column;
+  }
+  #sitio div img {
+    width: 70%;
+    height: auto;
+  }
+  /* paginas habitaciones & restaurant */
+  .introduccion {
+    margin: 20px;
+  }
+  .galeria-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  font-family: "Poppins", sans-serif;
+  font-family: "PT Serif", serif;
+}
+
+body {
+  background-color: rgba(224, 224, 224, 0.945);
+}
+body p {
+  font-size: 18px;
+}
+
+/* botom home fixed */
+#boton-home-fixed {
+  background-color: rgba(128, 128, 128, 0.493);
+  background-image: url("../assets/img/homeBack.png");
+  background-size: cover;
+  border-top-left-radius: 40%;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+}/*# sourceMappingURL=main.css.map */

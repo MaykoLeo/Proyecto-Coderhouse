@@ -1,0 +1,104 @@
+/* PRESENTACION INDEX */
+
+#intro {
+    width: 100%;
+    height: 600px;
+
+    background: {
+        image: linear-gradient(0deg, rgba(61, 61, 61, 0) 60%, rgba(77, 77, 77, 0.6138830532) 100%), url('../assets/img/hall-hotel.jpg');
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+    }
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        width: 80%;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.419);
+        padding: 5px 15px;
+        height: 200px;
+        z-index: 2;
+
+        h1 {
+            padding-top: 0px;
+            color: $colorDorado;
+            font-style: italic;
+            font-size: 23px;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+    }
+}
+
+/* CONTENIDO INDEX */
+
+#sitio {
+    position: inherit;
+    margin-top: 600px;
+    font-weight: 500;
+    font-size: 25px;
+
+    p {
+        padding: 5%;
+        font-size: 20px;
+    }
+
+    div {
+        display: flex;
+        padding: 20px 0;
+        align-items: center;
+
+        img {
+            border-radius: 10px;
+        }
+
+        .texto-presentacion {
+            flex-direction: column;
+        }
+    }
+
+    h4 {
+        color: black;
+        border-bottom: solid 2px rgb(196, 142, 41);
+        padding-bottom: 5px;
+    }
+
+    a {
+        background-color: black;
+        color: $colorDorado;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+
+    .presentacion-habitacion .img-room-home {
+        /* home presentacion habitación */
+        width: 40%;
+        height: auto;
+    }
+
+
+    .presentacion-bar .img-bar-home {
+        /* home presentacion bar restaurant */
+        width: 50%;
+        height: auto;
+        order: 1;
+    }
+}

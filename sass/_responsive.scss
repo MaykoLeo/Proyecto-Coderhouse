@@ -1,0 +1,94 @@
+@media (max-width: $resolMobileTablet) {
+    /* BARRA NAVEGACION HAMBURG */
+
+    .img-menu-hamb {
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70px;
+        }
+
+        display: block;
+    }
+
+    .navigation-bar {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.901);
+        width: auto;
+        height: 265px;
+        padding: 0;
+        margin-left: -80%;
+        transition: all 0.3s;
+
+        .botones {
+            display: block;
+            width: auto;
+            flex-direction: column;
+            position: relative;
+            top: 0;
+            left: 0;
+            text-align: initial;
+            border-bottom: none;
+            padding: 0;
+
+            .boton-menu {
+                margin: 0%;
+                padding: 12px 5px;
+
+                a {
+                    color: $colorDorado;
+                    font-size: 1.40rem;
+                }
+            }
+        }
+    }
+
+    #check-menu:checked~.navigation-bar {
+        margin: 0;
+    }
+
+    /* PRESENTACION INDEX */
+
+    #intro {
+        margin: 0;
+
+        .presentacion {
+            overflow: auto;
+            padding: 0 0;
+            margin: 0;
+
+            h2 {
+                width: min(350px);
+                margin-top: 200px;
+            }
+        }
+    }
+
+    #sitio {
+        .presentacion-habitacion .img-room-home {
+            order: 1;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 70%;
+                height: auto;
+            }
+        }
+    }
+
+    /* paginas habitaciones & restaurant */
+
+    .introduccion {
+        margin: 20px;
+    }
+
+    .galeria-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
