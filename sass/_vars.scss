@@ -2,6 +2,12 @@
 $colorDorado: wheat;
 $resolMobileTablet: 767px;
 
+$colores: (
+    underline: rgb(196, 142, 41),
+    gris: gray,
+);
+
+
 //mixin
 @mixin flexColumnAllCenter {
     display: flex;

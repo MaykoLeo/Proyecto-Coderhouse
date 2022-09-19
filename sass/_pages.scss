@@ -15,7 +15,7 @@
         h1 {
             font-size: 30px;
             margin: 20px;
-            border-bottom: solid 2px rgb(196, 142, 41);
+            border-bottom: solid 2px map-get($colores, $underline);
             display: inline-block;
         }
 
@@ -36,7 +36,7 @@
 .titulo-main {
     font-size: 30px;
     margin: 20px;
-    border-bottom: solid 2px rgb(196, 142, 41);
+    border-bottom: solid 2px map-get($colores, $underline);
     display: inline-block;
 }
 
@@ -46,7 +46,7 @@ div.galeria-texto {
     font-size: 30px;
     align-items: center;
     text-align: center;
-    border-bottom: solid 5px rgb(196, 142, 41);
+    border-bottom: solid 5px map-get($map: $colores, $key: $underline);
     padding-top: 30px;
     padding-bottom: 5px;
 }
@@ -114,7 +114,7 @@ section.galeria-container {
     }
 
     .formulario-contacto {
-        background-color: rgb(196, 142, 41);
+        background-color: map-get($colores, $underline);
         box-sizing: border-box;
         border-radius: 5px;
         width: 500px;
@@ -145,10 +145,6 @@ section.galeria-container {
                 max-height: 250px;
                 min-height: 150px;
             }
-
-            #boton-enviar:hover {
-                cursor: pointer;
-            }
         }
 
         p {
@@ -158,11 +154,15 @@ section.galeria-container {
 }
 
 #boton-enviar {
-    background-color: gray;
+    background-color: map-get($map: $colores, $key: gris);
     color: white;
     font-size: 20px;
     padding: 15px;
     margin-bottom: 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 
@@ -193,13 +193,10 @@ section.galeria-container {
         }
     }
 
-    #boton-enviar {
+    #boton-enviar-reserva {
+        @extend #boton-enviar;
         height: auto;
         padding: 10px;
         text-align: center;
-
-        &:hover {
-            cursor: pointer;
-        }
     }
 }

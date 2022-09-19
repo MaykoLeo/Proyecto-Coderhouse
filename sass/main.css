@@ -296,19 +296,19 @@ section.galeria-container .item-gallery img {
   max-height: 250px;
   min-height: 150px;
 }
-.contacto .formulario-contacto .formulario #boton-enviar:hover {
-  cursor: pointer;
-}
 .contacto .formulario-contacto p {
   text-align: center;
 }
 
-#boton-enviar {
+#boton-enviar, .reserva #boton-enviar-reserva {
   background-color: gray;
   color: white;
   font-size: 20px;
   padding: 15px;
   margin-bottom: 20px;
+}
+#boton-enviar:hover, .reserva #boton-enviar-reserva:hover {
+  cursor: pointer;
 }
 
 /* PAGINA RESERVA */
@@ -336,13 +336,10 @@ section.galeria-container .item-gallery img {
   margin-bottom: 20px;
   font-size: 18px;
 }
-.reserva #boton-enviar {
+.reserva #boton-enviar-reserva {
   height: auto;
   padding: 10px;
   text-align: center;
-}
-.reserva #boton-enviar:hover {
-  cursor: pointer;
 }
 
 /* FOOTER */
