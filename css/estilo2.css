@@ -421,6 +421,14 @@ section.galeria-container .item-gallery img {
 
 }
 
+.contacto .formulario-contacto .formulario #boton-enviar:hover {
+    cursor: pointer;
+}
+
+.contacto .formulario-contacto p {
+    text-align: center;
+}
+
 #boton-enviar {
     background-color: gray;
     color: white;
@@ -429,13 +437,7 @@ section.galeria-container .item-gallery img {
     margin-bottom: 20px;
 }
 
-.contacto .formulario-contacto .formulario #boton-enviar:hover {
-    cursor: pointer;
-}
 
-.contacto .formulario-contacto p {
-    text-align: center;
-}
 
 
 /* PAGINA RESERVA */

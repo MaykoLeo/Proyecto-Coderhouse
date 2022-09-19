@@ -17,16 +17,11 @@
     left: 0;
     position: absolute;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexColumnAllCenter;
+
 
     .presentacion {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flexColumnAllCenter;
         margin-top: 100px;
         width: 80%;
         border-radius: 15px;
