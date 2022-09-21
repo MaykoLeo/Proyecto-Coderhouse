@@ -11,12 +11,12 @@
 }
 
 /* Grid */
-/* #body-container {
+#body-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 200px auto 100px;
     min-width: 320px;
-} */
+}
 
 
 body {

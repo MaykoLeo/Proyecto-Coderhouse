@@ -1,5 +1,6 @@
 /* PRESENTACION INDEX */
 
+
 #intro {
     width: 100%;
     height: 600px;
@@ -37,6 +38,8 @@
             font-size: 23px;
             letter-spacing: 2px;
             text-align: center;
+            min-width: 80%;
+            min-height: 80%;
         }
     }
 }
@@ -70,7 +73,7 @@
 
     h4 {
         color: black;
-        border-bottom: solid 2px map-get($colores, $underline);
+        border-bottom: solid 2px map-get($map: $colores, $key: underline);
         padding-bottom: 5px;
     }
 

@@ -12,6 +12,7 @@
   transition: 0.25s ease-in;
 }
 #header .logo-nombre {
+  height: 88px;
   text-align: center;
   padding: 0 70px;
 }
@@ -113,6 +114,8 @@
   font-size: 23px;
   letter-spacing: 2px;
   text-align: center;
+  min-width: 80%;
+  min-height: 80%;
 }
 
 /* CONTENIDO INDEX */
@@ -371,6 +374,18 @@ section.galeria-container .item-gallery img {
 }
 @media (max-width: 767px) {
   /* BARRA NAVEGACION HAMBURG */
+  #header .logo-nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 88px;
+    padding: 0 70px;
+  }
+  #header .logo-nombre img {
+    width: 250px;
+    height: auto;
+  }
   .img-menu-hamb {
     display: block;
   }
@@ -386,7 +401,7 @@ section.galeria-container .item-gallery img {
     width: auto;
     height: 265px;
     padding: 0;
-    margin-left: -80%;
+    margin-left: -100%;
     transition: all 0.3s;
   }
   .navigation-bar .botones {

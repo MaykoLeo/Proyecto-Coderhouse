@@ -20,6 +20,19 @@
 @media (max-width: $resolMobileTablet) {
     /* BARRA NAVEGACION HAMBURG */
 
+    #header {
+        .logo-nombre {
+            @include flexColumnAllCenter;
+            height: 88px;
+            padding: 0 min(70px);
+
+            img {
+                width: 250px;
+                height: auto;
+            }
+        }
+    }
+
     .img-menu-hamb {
         img {
             position: absolute;
@@ -37,7 +50,7 @@
         width: auto;
         height: 265px;
         padding: 0;
-        margin-left: -80%;
+        margin-left: -100%;
         transition: all 0.3s;
 
         .botones {

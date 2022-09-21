@@ -2,7 +2,7 @@
 
 #footer {
     @include flexColumnAllCenter;
-    background-color: map-get($colores, $gris);
+    background-color: map-get($colores, gris);
 
     div {
         padding: 10px 15px;
