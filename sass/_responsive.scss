@@ -24,7 +24,7 @@
         .logo-nombre {
             @include flexColumnAllCenter;
             height: 88px;
-            padding: 0 min(70px);
+            padding: 0 0 0 min(70px);
 
             img {
                 width: 250px;

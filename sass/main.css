@@ -66,6 +66,7 @@
 .navigation-bar .botones .boton-menu a {
   color: black;
   font-size: 20px;
+  text-decoration: none;
 }
 .navigation-bar .botones .boton-menu a:hover {
   color: rgb(155, 140, 113);
@@ -231,6 +232,12 @@ section.galeria-container .item-gallery img {
   height: 100%;
 }
 
+.carousel-inner {
+  background-color: bisque;
+  width: 100%;
+  padding: 25px;
+}
+
 /* PAGINA UBICACION */
 #ubicacion .ubicacion-main {
   margin-top: 140px;
@@ -380,7 +387,7 @@ section.galeria-container .item-gallery img {
     align-items: center;
     justify-content: center;
     height: 88px;
-    padding: 0 70px;
+    padding: 0 0 0 70px;
   }
   #header .logo-nombre img {
     width: 250px;
@@ -490,6 +497,7 @@ section.galeria-container .item-gallery img {
 
 body {
   background-color: rgba(224, 224, 224, 0.945);
+  min-width: 320px;
 }
 body p {
   font-size: 18px;
