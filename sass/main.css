@@ -250,7 +250,7 @@ section.galeria-container .item-gallery img {
 }
 #ubicacion .ubicacion-main p {
   width: 80%;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 20px;
 }
 #ubicacion .ubicacion-main .map {
@@ -272,6 +272,7 @@ section.galeria-container .item-gallery img {
 }
 .contacto .contacto-texto p {
   width: 80%;
+  font-size: 20px;
   text-indent: 5%;
   line-height: 30px;
 }
@@ -330,6 +331,9 @@ section.galeria-container .item-gallery img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.reserva .reserva-main h2 {
+  font-size: 20px;
 }
 .reserva .reserva-main .formulario {
   background-color: #4585E6;
