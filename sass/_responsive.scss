@@ -21,6 +21,9 @@
     /* BARRA NAVEGACION HAMBURG */
 
     #header {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+
         .logo-nombre {
             @include flexColumnAllCenter;
             height: 88px;
@@ -48,7 +51,7 @@
         position: absolute;
         background: rgba(0, 0, 0, 0.901);
         width: auto;
-        height: 265px;
+        height: 278px;
         padding: 0;
         margin-left: -100%;
         transition: all 0.3s;
@@ -131,6 +134,8 @@
 
         iframe.map {
             padding: 10px;
+            width: 320px;
+
         }
     }
 

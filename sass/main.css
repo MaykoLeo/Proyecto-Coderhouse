@@ -185,6 +185,7 @@
   margin: 20px;
   border-bottom: solid 2px rgb(196, 142, 41);
   display: inline-block;
+  font-weight: bold;
 }
 .introduccion .presentacion .texto-intro-galeria p {
   font-size: 20px;
@@ -381,6 +382,10 @@ section.galeria-container .item-gallery img {
 }
 @media (max-width: 767px) {
   /* BARRA NAVEGACION HAMBURG */
+  #header {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+  }
   #header .logo-nombre {
     display: flex;
     flex-direction: column;
@@ -406,7 +411,7 @@ section.galeria-container .item-gallery img {
     position: absolute;
     background: rgba(0, 0, 0, 0.901);
     width: auto;
-    height: 265px;
+    height: 278px;
     padding: 0;
     margin-left: -100%;
     transition: all 0.3s;
@@ -471,6 +476,7 @@ section.galeria-container .item-gallery img {
   }
   #ubicacion .ubicacion-main iframe.map {
     padding: 10px;
+    width: 320px;
   }
   /* pag contacto */
   .contacto .contacto-texto {
