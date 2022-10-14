@@ -103,6 +103,7 @@
   margin-top: 100px;
   width: 80%;
   border-radius: 15px;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
   background-color: rgba(0, 0, 0, 0.419);
   padding: 5px 15px;
   height: 200px;
@@ -165,6 +166,93 @@
   order: 1;
 }
 
+.evento-presentacion-texto .texto-presentacion {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  align-items: center;
+  text-align: center;
+}
+.evento-presentacion-texto h4 {
+  color: black;
+  border-bottom: solid 2px rgb(196, 142, 41);
+  padding-bottom: 5px;
+  font-weight: 500;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#evento {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+}
+#evento .evento-presentacion .card {
+  width: 280px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+#evento .evento-presentacion .card:hover {
+  transform: translateY(20px);
+}
+#evento .evento-presentacion .card:hover:before {
+  opacity: 1;
+}
+#evento .evento-presentacion .card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+#evento .evento-presentacion .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+#evento .evento-presentacion .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+#evento .evento-presentacion .card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+#evento .evento-presentacion .card .info h4 {
+  margin: 0px;
+  color: wheat;
+}
+#evento .evento-presentacion .card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
 /* PAGINAS */
 /* introduccion */
 .introduccion .presentacion {
@@ -220,6 +308,8 @@ section.galeria-container {
   width: 100%;
   padding: 25px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   flex-direction: row;
   flex-wrap: wrap;
@@ -369,7 +459,7 @@ section.galeria-container .item-gallery img {
   padding: 10px 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   /* animacion galeria */
   section.galeria-container .item-gallery img {
     filter: grayscale(1);
@@ -384,11 +474,12 @@ section.galeria-container .item-gallery img {
     border: 4px solid rgb(163, 126, 77);
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* BARRA NAVEGACION HAMBURG */
   #header {
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
+    height: 80px;
   }
   #header .logo-nombre {
     display: flex;
@@ -442,7 +533,7 @@ section.galeria-container .item-gallery img {
   #check-menu:checked ~ .navigation-bar {
     margin: 0;
   }
-  /* PRESENTACION INDEX */
+  /* Presentacion Index */
   #intro {
     margin: 0;
   }
@@ -466,7 +557,25 @@ section.galeria-container .item-gallery img {
     width: 70%;
     height: auto;
   }
-  /* paginas habitaciones & restaurant */
+  /* Cards Eventos Index*/
+  #evento {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #evento .evento-presentacion .card {
+    margin-bottom: 20px;
+    pointer-events: none;
+    opacity: 1;
+  }
+  #evento .evento-presentacion .card .info {
+    opacity: 1;
+    transform: none;
+  }
+  #evento .evento-presentacion .card img {
+    filter: brightness(0.6);
+  }
+  /* Paginas habitaciones & restaurant */
   .introduccion {
     margin: 20px;
   }
@@ -474,7 +583,7 @@ section.galeria-container .item-gallery img {
     display: flex;
     flex-direction: column;
   }
-  /* pag ubicacion */
+  /* Pag ubicacion */
   #ubicacion .ubicacion-main {
     padding-top: 50px;
   }
@@ -482,16 +591,22 @@ section.galeria-container .item-gallery img {
     padding: 10px;
     width: 320px;
   }
-  /* pag contacto */
+  /* Pag contacto */
   .contacto .contacto-texto {
     padding-top: 50px;
   }
   .contacto .formulario-contacto {
     margin: 10px;
   }
-  /* pag reserva */
+  /* Pag reserva */
   .reserva .reserva-main {
     padding-top: 50px;
+  }
+}
+/* Ajuste Card Index */
+@media (min-width: 769px) and (max-width: 861px) {
+  #evento .evento-presentacion .card {
+    width: 250px;
   }
 }
 * {

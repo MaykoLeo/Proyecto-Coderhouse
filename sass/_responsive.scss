@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     /* animacion galeria */
 
     section.galeria-container .item-gallery img {
@@ -23,6 +23,7 @@
     #header {
         background-color: rgba(255, 255, 255, 0.5);
         width: 100%;
+        height: 80px;
 
         .logo-nombre {
             @include flexColumnAllCenter;
@@ -83,7 +84,7 @@
         margin: 0;
     }
 
-    /* PRESENTACION INDEX */
+    /* Presentacion Index */
 
     #intro {
         margin: 0;
@@ -116,7 +117,33 @@
         }
     }
 
-    /* paginas habitaciones & restaurant */
+    /* Cards Eventos Index*/
+
+    #evento {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .evento-presentacion {
+            .card {
+                margin-bottom: 20px;
+                pointer-events: none;
+                opacity: 1;
+
+                .info {
+                    opacity: 1;
+                    transform: none;
+                }
+
+                img {
+                    filter: brightness(0.6);
+                }
+            }
+
+        }
+    }
+
+    /* Paginas habitaciones & restaurant */
 
     .introduccion {
         margin: 20px;
@@ -127,7 +154,7 @@
         flex-direction: column;
     }
 
-    /* pag ubicacion */
+    /* Pag ubicacion */
 
     #ubicacion .ubicacion-main {
         padding-top: 50px;
@@ -139,7 +166,7 @@
         }
     }
 
-    /* pag contacto */
+    /* Pag contacto */
 
     .contacto {
         .contacto-texto {
@@ -151,9 +178,23 @@
         }
     }
 
-    /* pag reserva */
+    /* Pag reserva */
 
     .reserva .reserva-main {
         padding-top: 50px;
+    }
+
+
+}
+
+
+/* Ajuste Card Index */
+@media (min-width: 769px) and (max-width: 861px) {
+    #evento {
+        .evento-presentacion {
+            .card {
+                width: 250px;
+            }
+        }
     }
 }
