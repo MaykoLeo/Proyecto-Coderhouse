@@ -50,6 +50,11 @@ div.galeria-texto {
     border-bottom: solid 5px map-get($map: $colores, $key: underline);
     padding-top: 30px;
     padding-bottom: 5px;
+
+    h4 {
+        display: block;
+        font-weight: bold;
+    }
 }
 
 section.galeria-container {
@@ -214,4 +219,114 @@ section.galeria-container {
         padding: 10px;
         text-align: center;
     }
+}
+
+/* PAGINA DISPONIBILIDAD */
+
+.disponibilidad {
+    margin-top: 140px;
+    padding-bottom: 25px;
+    @include flexColumnAllCenter;
+
+    h1 {
+        font-size: 30px;
+        margin: 20px;
+        border-bottom: solid 2px map-get($colores, underline);
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .rooms-container {
+        width: 100%;
+        @include flexColumnAllCenter;
+
+        .habitacion-disponible {
+            width: 700px;
+            margin-bottom: 30px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            h2 {
+                width: 100%;
+                text-align: start;
+                margin: 8px 0;
+            }
+
+            .descripcion {
+                width: 50%;
+                display: block;
+                border: solid 1px hsla(0, 0%, 0%, 0.281);
+
+                .imagen {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .detalles-container {
+                    .detalles {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        font-size: 20px;
+
+                        .elemento-detalle {
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: initial;
+                            flex-basis: 45%;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+
+            }
+
+            .costo {
+                margin-left: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-basis: 45%;
+
+                .precio {
+                    span {
+                        font-size: 1.2rem;
+                        font-weight: 300
+                    }
+                }
+
+                .boton-disponibilidad {
+                    margin-top: 1.1rem;
+                    background-color: rgb(13, 71, 119);
+                    color: white;
+                    font-size: 18px;
+                    padding: 10px;
+
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+
+            &:nth-child(n+2) {
+                border-top: solid 5px map-get($colores, underline);
+            }
+
+        }
+
+
+    }
+
+
+
+
+
 }

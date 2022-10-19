@@ -185,6 +185,47 @@
     }
 
 
+    /* Pag Disponibilidad */
+
+    .disponibilidad {
+        .rooms-container {
+            .habitacion-disponible {
+                @include flexColumnAllCenter;
+                width: 350px;
+
+                h2 {
+                    width: 100%;
+                    text-align: center;
+                    margin: 8px 0;
+                }
+
+                .descripcion {
+                    width: 80%;
+
+                    .detalles-container {
+                        .detalles {
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            align-content: flex-start;
+                            justify-content: center;
+                            align-items: flex-start;
+
+                            .elemento-detalle {
+                                display: none;
+                                display: flex;
+                                flex-basis: 0;
+                            }
+                        }
+                    }
+                }
+
+                .costo {
+                    margin-top: 10px;
+                }
+
+            }
+        }
+    }
 }
 
 
